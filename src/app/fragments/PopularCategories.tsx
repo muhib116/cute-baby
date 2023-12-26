@@ -6,7 +6,7 @@ import CategoryCard from './CategoryCard'
 function PopularCategories() {
   return (
     <HorizontalCardList
-        itemsWrapperClassName='grid-cols-6'
+        itemsWrapperClassName='grid-cols-8'
         title="Popular Categories"
         href={{ pathname: '/' }}
         key={ Math.random() }

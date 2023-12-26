@@ -32,7 +32,7 @@ function CategoryCard(props: {
                 alt="Category"
             />
             <h3
-                className='block truncate '
+                className='block truncate text-center'
             >
                 { title }
             </h3>

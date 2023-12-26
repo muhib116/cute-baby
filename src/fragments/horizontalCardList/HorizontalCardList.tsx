@@ -1,13 +1,5 @@
-import React, { FC, ReactElement } from 'react';
+import React from 'react';
 import ViewAllBtn from './fragments/ViewAllBtn';
-
-// interface PopularCategoriesProps {
-//   itemsWrapperClassName: string,
-//   data: any[], // Adjust the type of your data array
-//   title?: string,
-//   href?: object,
-//   renderItem?: { key: string, data: object } // Adjust the type of your renderItem component
-// }
 
 function PopularCategories (props: {
   itemsWrapperClassName?: string;
@@ -37,7 +29,6 @@ function PopularCategories (props: {
             renderItem ? (
               <div key={index}>
                 {
-                  // React.createElement(renderItem, { key: String(index), data: item })
                   renderItem({key: String(index), data: item})
                 }
               </div>
