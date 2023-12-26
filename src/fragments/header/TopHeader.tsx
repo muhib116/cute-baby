@@ -4,7 +4,7 @@ import { AndroidLogo, AppStoreLogo, Phone, Heart, PushPinSimple } from "@phospho
 
 const TopHeader = () => {
   return (
-    <div className="text-[0.8rem] bg-[var(--topBarBg)] border-b border-b-color-[var(--bottomColor)] py-2 text-[var(--topBarTextColor)] hidden lg:block px-10">
+    <div className="text-[0.8rem] bg-[var(--topBarBg)] border-b border-b-color-[var(--bottomColor)] py-2 text-[var(--topBarTextColor)] hidden lg:block px-4">
         <div className="container mx-auto py-0 flex space-between">
             <div className="flex flex-wrap gap-[0.6rem] items-center flex-shrink-0 flex-1">
                 <a href="#" className='flex gap-1 items-center whitespace-nowrap hover:text-[var(--topBarTextHoverColor)]'>

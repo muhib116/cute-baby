@@ -29,7 +29,7 @@ function Navigation() {
     const pathName = usePathname()
 
   return (
-    <nav className='border-b border-[var(--borderColor)] px-10'>
+    <nav className='border-b border-[var(--borderColor)] px-4'>
         <div className='container mx-auto flex justify-center'>
             {
                 navigation.map(item => (

@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const MiddlePart = () => {
   return (
-    <div className='border-b border-[var(--borderColor)] px-10'>
+    <div className='border-b border-[var(--borderColor)] px-4'>
         <div className="container mx-auto flex gap-10 justify-between py-4">
             <Link 
                 href="/" 
@@ -21,7 +21,7 @@ const MiddlePart = () => {
                     alt='Brand Name'
                     width={150}
                     height={34.5}
-                    className='w-[150px]'
+                    className='w-[110px] md:w-[150px]'
                 />
             </Link>
 

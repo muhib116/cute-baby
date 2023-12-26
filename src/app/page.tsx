@@ -1,7 +1,12 @@
 import Image from 'next/image'
+import Banner from './fragments/banner/Banner'
 
 export default function Home() {
   return (
-    <main>Home Page</main>
+    <main>
+      <div className=''>
+        <Banner />
+      </div>
+    </main>
   )
 }
