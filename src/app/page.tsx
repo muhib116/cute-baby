@@ -1,11 +1,14 @@
 import Image from 'next/image'
-import Banner from './fragments/banner/Banner'
+import { popularCategoriesData } from '@/placeholderData/data'
+import HeaderBanner from './fragments/HeaderBanner'
+import PopularCategories from './fragments/PopularCategories'
 
 export default function Home() {
   return (
     <main>
       <div className=''>
-        <Banner />
+        <HeaderBanner />
+        <PopularCategories />
       </div>
     </main>
   )

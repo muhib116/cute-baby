@@ -7,7 +7,7 @@ import img4 from '@/assets/images/4.webp'
 
 function Banner() {
   return (
-    <div className='px-4'>
+    <header className='px-4'>
         <div className='container mx-auto'>
             <div className='block lg:flex gap-[0.8rem]'>
                 <div className='flex-1 mb-[0.8rem] lg:mb-0'>
@@ -64,7 +64,7 @@ function Banner() {
                 </div>
             </div>
         </div>
-    </div>
+    </header>
   )
 }
 

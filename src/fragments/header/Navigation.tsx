@@ -30,21 +30,26 @@ function Navigation() {
 
   return (
     <nav className='border-b border-[var(--borderColor)] px-4'>
-        <div className='container mx-auto flex justify-center'>
-            {
-                navigation.map(item => (
-                    <Link
-                        className={[
-                            "py-2 px-2 block font-light capitalize",
-                            pathName == item.href?.pathname && 'text-[var(--primaryColor)]'
-                        ].filter(Boolean).join(' ')}
-                        key={item.title}
-                        href={ {...item.href} }
-                    >
-                        { item.title }
-                    </Link>
-                ))
-            }
+        <div className='container mx-auto'>
+            <ul className='flex justify-center'>
+                {
+                    navigation.map(item => (
+                        <li
+                            key={item.title}
+                        >
+                            <Link
+                                className={[
+                                    "py-2 px-2 block font-light capitalize",
+                                    pathName == item.href?.pathname && 'text-[var(--primaryColor)]'
+                                ].filter(Boolean).join(' ')}
+                                href={ {...item.href} }
+                            >
+                                { item.title }
+                            </Link>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     </nav>
   )
