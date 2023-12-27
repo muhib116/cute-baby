@@ -4,69 +4,73 @@ import { EnvelopeSimple, FacebookLogo, GoogleChromeLogo, InstagramLogo, MapPin, 
 import React from 'react'
 const footerMenu = [
   {
-    title: 'mahsin',
-    item1: 'item'
+    title: 'Information',
+    item1: 'About Us',
+    item2: 'Delivery Information',
+    item3: 'Privacy Policy',
+    item4: 'Terms & Conditions',
+    item5: 'Site Map'
+  },
+  {
+    title: 'Extras',
+    item1: 'Brands',
+    item2: 'Gift Certificates',
+    item3: 'Affiliate',
+    item4: 'Specials',
+    item5: 'Contact Us'
+  },
+  {
+    title: 'My Account',
+    item1: 'My Account',
+    item2: 'Order History',
+    item3: 'Wish List',
+    item4: 'Newsletter',
+    item5: 'Returns'
+  },
+  {
+    title: 'Quick Links',
+    item1: 'Seller Login',
+    item2: 'Seller Sign Up',
+    item3: 'Seller Handbook',
+    item4: 'Seller Control Panel',
+    item5: 'Seller FAQs'
   },
 ]
+
 
 function Footer() {
   return (
     <div>
       <div className='bg-[#181818]'>
         <div className='py-[60px] grid grid-cols-5 container mx-auto'>
-          <div className='px-4'>
-            <h5 className='text-white mb-5 font-medium'>Information</h5>
-            <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
-              <a href="#" className='block mb-2'>About Us</a>
-              <a href="#" className='block mb-2'>Delivery Information</a>
-              <a href="#" className='block mb-2'>Privacy Policy</a>
-              <a href="#" className='block mb-2'>Terms & Conditions</a>
-              <a href="#" className='block mb-2'>Site Map</a>
-            </div>
-          </div>
-          <div className='px-4'>
-            <h5 className='text-white mb-5 font-medium'>Extras</h5>
-            <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
-              <a href="#" className='block mb-2'>Brands</a>
-              <a href="#" className='block mb-2'>Gift Certificates</a>
-              <a href="#" className='block mb-2'>Affiliate</a>
-              <a href="#" className='block mb-2'>Specials</a>
-              <a href="#" className='block mb-2'>Contact Us</a>
-            </div>
-          </div>
-          <div className='px-4'>
-            <h5 className='text-white mb-5 font-medium'>My Account</h5>
-            <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
-              <a href="#" className='block mb-2'>My Account</a>
-              <a href="#" className='block mb-2'>Order History</a>
-              <a href="#" className='block mb-2'>Wish List</a>
-              <a href="#" className='block mb-2'>Newsletter</a>
-              <a href="#" className='block mb-2'>Returns</a>
-            </div>
-          </div>
-          <div className='px-4'>
-            <h5 className='text-white mb-5 font-medium'>Quick Links</h5>
-            <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
-              <a href="#" className='block mb-2'>Seller Login</a>
-              <a href="#" className='block mb-2'>Seller Sign Up</a>
-              <a href="#" className='block mb-2'>Seller Handbook</a>
-              <a href="#" className='block mb-2'>Seller Control Panel</a>
-              <a href="#" className='block mb-2'>Seller FAQs</a>
-            </div>
-          </div>
+          {
+            footerMenu.map(item => (
+              <div className='px-4'>
+                <h5 className='text-white mb-5 font-medium'>{ item.title }</h5>
+                <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
+                  <a href="#" className='block mb-2'>{ item.item1 }</a>
+                  <a href="#" className='block mb-2'>{ item.item2 }</a>
+                  <a href="#" className='block mb-2'>{ item.item3 }</a>
+                  <a href="#" className='block mb-2'>{ item.item4 }</a>
+                  <a href="#" className='block mb-2'>{ item.item5 }</a>
+                </div>
+              </div>
+            ))
+          }
+
           <div className='px-4'>
             <h5 className='text-white mb-5 font-medium'>Contact</h5>
             <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
               <a href='#' className='mb-2 items-center flex gap-1'>
-                <MapPin size={21} className='w-5'/>
+                <MapPin size={21} className='w-5' />
                 Mymensingh
               </a>
               <a href='#' className='mb-2 items-center flex gap-1'>
-                <Phone size={21} className='w-5'/>
+                <Phone size={21} className='w-5' />
                 017 7098-9591
               </a>
               <a href='#' className='mb-2 items-center flex gap-1'>
-                <EnvelopeSimple size={21} className='w-5'/>
+                <EnvelopeSimple size={21} className='w-5' />
                 shop@gmail.com
               </a>
             </div>
@@ -95,10 +99,10 @@ function Footer() {
           </div>
           <div>
             <span className='text-white text-[12px]'>
-              Powered By 
+              Powered By
               <a href="#"> OpenCart </a>
               Portable - Mega Store © 2023
-             </span>
+            </span>
           </div>
         </div>
       </div>
