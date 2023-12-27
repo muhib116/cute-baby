@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import AddMoreToCart from './AddMoreToCart'
+import AddMoreToCart from '../../../app/components/AddMoreToCart'
 import AddButton from './AddButton'
 
 function AddToCartButton(props: {

@@ -30,9 +30,11 @@ function ProductRightTopSide() {
             horizontal={ true }
             className='text-[1.2rem] my-[1rem]'
         />
-        <p className='text-[1rem] border-b border-[var(--borderColor)] pb-[1rem] mb-[1rem] leading-[1.4] font-light tracking-[0.01]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        </p>
+        <div className='h-[200px] overflow-y-auto border-b border-[var(--borderColor)] pb-[1rem] mb-[1.5rem] text-[1rem] leading-[1.4] font-light tracking-[0.01]'>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+            </p>
+        </div>
     </>
   )
 }
