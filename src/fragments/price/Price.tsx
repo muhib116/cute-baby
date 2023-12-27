@@ -1,5 +1,6 @@
 import { pricePrint } from '@/helper';
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
 function Price(props: {
     data: {
@@ -7,31 +8,40 @@ function Price(props: {
         price: number;
     },
     horizontal: boolean;
+    className?: string;
 }) {
-    const { horizontal, data } = props
+    const { horizontal, data, className } = props
   return (
-    data.offerPrice ? 
-    <div 
-        className={[
-            'flex gap-2 items-center text-[0.8rem] font-semibold',
-            horizontal ? '' : 'justify-center'
-        ].filter(Boolean).join(' ')}
+    <div className={[
+        'text-[0.8rem] font-medium',
+        className
+    ].filter(Boolean).join(' ')}
     >
-        <p className='text-lg font-medium text-[var(--priceColor)]'>
-            { pricePrint(data.offerPrice) }
-        </p>
-        <p className='text-xs '>
-            <del>{ pricePrint(data.price) }</del>
-        </p>
+        {
+            data.offerPrice ? 
+            <div 
+                className={[
+                    'flex gap-2 items-center',
+                    horizontal ? '' : 'justify-center'
+                ].filter(Boolean).join(' ')}
+            >
+                <p className='text-[var(--priceColor)]'>
+                    { pricePrint(data.offerPrice) }
+                </p>
+                <p className='text-sm opacity-70'>
+                    <del>{ pricePrint(data.price) }</del>
+                </p>
+            </div>
+            :<p 
+                className={[
+                    'font-medium text-[var(--priceColor)]',
+                    horizontal ? '' : 'text-center'
+                ].filter(Boolean).join(' ')}
+            >
+                { pricePrint(data.price) }
+            </p>
+        }
     </div>
-    :<p 
-        className={[
-            'font-medium text-lg text-[var(--priceColor)]',
-            horizontal ? '' : 'text-center'
-        ].filter(Boolean).join(' ')}
-    >
-        { pricePrint(data.price) }
-    </p>
   )
 }
 
