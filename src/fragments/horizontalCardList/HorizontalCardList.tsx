@@ -17,9 +17,12 @@ function PopularCategories (props: {
           {title || 'Section Title'}
         </h2>
 
-        <ViewAllBtn
-          href={ {...href} }
-        />
+        {
+          href &&
+          <ViewAllBtn
+            href={ {...href} }
+          />
+        }
       </div>
 
       <div 
