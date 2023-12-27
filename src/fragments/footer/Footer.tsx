@@ -1,7 +1,7 @@
 "use client"
 
 import { EnvelopeSimple, FacebookLogo, GoogleChromeLogo, InstagramLogo, MapPin, Phone, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react'
-import React from 'react'
+  import React from 'react'
 const footerMenu = [
   {
     title: 'Information',
