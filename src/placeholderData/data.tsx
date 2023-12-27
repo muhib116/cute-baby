@@ -185,3 +185,26 @@ export const limitedTimeOffer = [
         rating: 3.2
     }
 ]
+
+export const couponsData = [
+    {
+        title: '',
+        code: '',
+        src: 'https://shop.activeitzone.com/public/uploads/all/NDhyyCsIeIz4Mcoka3xGuTgIYcxLm0ysWvgFdzCJ.webp'
+    },
+    {
+        title: '',
+        code: '',
+        src: 'https://shop.activeitzone.com/public/uploads/all/egcMHOrTZnVYjYm3Q9RUUmXbfd1DwnjLmE6yiaN4.webp'
+    },
+    {
+        title: '',
+        code: '',
+        src: 'https://shop.activeitzone.com/public/uploads/all/UZRcVR5zFYDqPlMzvl0SemIaOQZJjTLIyH4tMheY.webp'
+    },
+    {
+        title: '',
+        code: '',
+        src: 'https://shop.activeitzone.com/public/uploads/all/jJZ7ccmqKHqpulmobvlwyjEHLkpQongEtfXpzse5.webp'
+    },
+]

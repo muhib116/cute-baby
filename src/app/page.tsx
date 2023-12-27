@@ -8,6 +8,9 @@ import LimitedTimeOffer from './fragments/LimitedTimeOffer'
 import ThreePartBanner from './fragments/ThreePartBanner'
 import OnePartBanner from './fragments/OnePartBanner'
 import Container from '@/fragments/Container'
+import FourPartBanner from './fragments/FourPartBanner'
+import Coupons from './fragments/Coupons'
+import BestSelling from './fragments/BestSelling'
 
 export default function Home() {
   return (
@@ -16,7 +19,7 @@ export default function Home() {
         <Container>
           <HeaderBanner />
         </Container>
-        
+
         <Container>
           <PopularCategories />
         </Container>
@@ -39,6 +42,15 @@ export default function Home() {
 
         <Container>
           <LimitedTimeOffer />
+        </Container>
+        <Container>
+          <FourPartBanner />
+        </Container>
+        <Container>
+          <Coupons />
+        </Container>
+        <Container>
+          <BestSelling />
         </Container>
       </div>
     </main>
