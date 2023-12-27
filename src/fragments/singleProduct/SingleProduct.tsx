@@ -4,7 +4,7 @@ import ProductRightTopSide from './fragments/ProductRightTopSide'
 
 function SingleProduct() {
   return (
-    <div className='flex min-h-[100px]'>
+    <div className='flex gap-[1.5rem] min-h-[100px]'>
         <div className='w-[400px] aspect-square flex-shrink-0'>
             <ProductImage />
         </div>
