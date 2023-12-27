@@ -1,3 +1,5 @@
+'use client'
+
 import Img from '@/app/components/Img'
 import React from 'react'
 
@@ -24,11 +26,11 @@ function Image() {
         height={ 400 }
         alt="Product Title"
       />
-      <div className='flex gap-2 overflow-auto snap-x snap-mandatory'>
+      <div className='flex gap-2 py-1 overflow-auto snap-x snap-mandatory no-scrollbar'>
         {
           images.map((image, index) => (
             <Img
-              className='w-[67px] aspect-square flex-shrink-0 flex-grow-0 snap-center rounded shadow'
+              className='w-[67px] aspect-square flex-shrink-0 flex-grow-0 snap-center rounded shadow cursor-pointer'
               key={ index }
               src={image}
               width={67}
