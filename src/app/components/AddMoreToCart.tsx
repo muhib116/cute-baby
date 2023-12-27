@@ -9,7 +9,7 @@ function AddMoreToCart(props: {
         <button className='px-2.5 py-1.5 border-r border-solid border-[var(--cartColor)] border-r-gray-300/30 hover:bg-white hover:text-[var(--cartColor)] duration-300 ease-in-out rounded-l'>
             +
         </button>
-        <button className='w-full'>
+        <button className='w-full px-4'>
             1 in bag
         </button>
         <button className='px-2.5 py-1.5 border-l border-solid border-[var(--cartColor)] border-l-gray-300/30 hover:bg-white hover:text-[var(--cartColor)] duration-300 ease-in-out rounded-r'>
