@@ -2,6 +2,12 @@
 
 import { EnvelopeSimple, FacebookLogo, GoogleChromeLogo, InstagramLogo, MapPin, Phone, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react'
 import React from 'react'
+const footerMenu = [
+  {
+    title: 'mahsin',
+    item1: 'item'
+  },
+]
 
 function Footer() {
   return (
