@@ -1,4 +1,5 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
 function Card(props: {
   children: React.ReactNode,
@@ -6,7 +7,7 @@ function Card(props: {
 }) {
   const { children, className } = props
   return (
-    <article className={['border border-[var(--borderColor)] p-3 relative hover:shadow-lg rounded duration-300 ease-in-out', className].filter(Boolean).join(' ')}>
+    <article className={ twMerge(['overflow-hidden border border-[var(--borderColor)] p-3 relative hover:shadow-lg rounded duration-300 ease-in-out hover:-mt-2', className].filter(Boolean).join(' ')) }>
       { children }
     </article>
   )

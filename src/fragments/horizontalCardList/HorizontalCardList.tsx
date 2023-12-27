@@ -6,9 +6,10 @@ function PopularCategories (props: {
   data: any[]; // Adjust the type of your data array
   title?: string;
   href?: object;
+  itemProps?: object;
   renderItem?: Function;
 }) {
-  const { data, title, renderItem, href, itemsWrapperClassName='grid-cols-7' } = props
+  const { data, title, renderItem, itemProps={}, href, itemsWrapperClassName='grid-cols-7' } = props
   return (
     <div className='px-4'>
       <div className='container mx-auto'>
@@ -29,7 +30,7 @@ function PopularCategories (props: {
             renderItem ? (
               <div key={index}>
                 {
-                  renderItem({key: String(index), data: item})
+                  renderItem({key: String(index), data: item, ...itemProps })
                 }
               </div>
             ) : null
