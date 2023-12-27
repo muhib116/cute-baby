@@ -19,7 +19,7 @@ function ShowRatings(props: {
         <span
             className='bg-[var(--ratingColor)] absolute left-0 top-0 h-full block'
             style={{
-                width: '20%'
+                width: `${20 * rating}%`
             }}
         ></span>
         <Img

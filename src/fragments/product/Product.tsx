@@ -5,6 +5,7 @@ import ShowRatings from '../ratings/ShowRatings'
 import { pricePrint } from '@/helper'
 import AddToCartButton from './fragments/AddToCartButton'
 import OfferTag from './fragments/OfferTag'
+import Price from '../price/Price'
 
 function Product(props: {
     data: {
@@ -71,25 +72,13 @@ function Product(props: {
                     horizontal ? 'text-left' : 'text-center'
                 ].filter(Boolean).join(' ')}
             >
-                {
-                    data.offerPrice ? 
-                    <div 
-                        className={[
-                            'flex gap-2 items-center text-[0.8rem] font-semibold',
-                            horizontal ? '' : 'justify-center'
-                        ].filter(Boolean).join(' ')}
-                    >
-                        <p className='text-lg font-medium text-[var(--priceColor)]'>
-                            { pricePrint(data.offerPrice) }
-                        </p>
-                        <p className='text-xs '>
-                            <del>{ pricePrint(data.price) }</del>
-                        </p>
-                    </div>
-                    :<p className='font-medium text-lg text-[var(--priceColor)]'>
-                        { pricePrint(data.price) }
-                    </p>
-                }
+                <Price
+                    horizontal={ horizontal }
+                    data={{ 
+                        offerPrice: data.offerPrice,
+                        price: data.price
+                     }}
+                />
             </div>
             <AddToCartButton
                 data={ data }
