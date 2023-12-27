@@ -7,53 +7,39 @@ import img4 from '@/assets/images/4.webp'
 
 function ThreePartBanner() {
   return (
-    <div className='px-4'>
-        <div className='container mx-auto'>
-            <div className='block lg:flex gap-[0.8rem]'>
-                <div className='flex-1 mb-[0.8rem] lg:mb-0'>
-                    <GlobalBanner
-                        key="bannerImageOne"
-                        image={{ 
-                            ...img1,
-                            alt: ''
-                        }}
-                        href={{ 
-                            pathname: '/'
-                        }}
-                    />
-                </div>
-                <div className='flex-1 flex gap-[0.8rem]'>
-                    <div className='flex-1 '>
-                        <div className='pb-[0.4rem]'>
-                            <GlobalBanner
-                                key="bannerImageTwo"
-                                image={{ 
-                                    ...img2,
-                                    alt: ''
-                                }}
-                                href={{ 
-                                    pathname: '/'
-                                }}
-                            />
-                        </div>
-                        <div className='pt-[0.4rem]'>
-                            <GlobalBanner
-                                key="bannerImageThree"
-                                image={{ 
-                                    ...img3,
-                                    alt: ''
-                                }}
-                                href={{ 
-                                    pathname: '/'
-                                }}
-                            />
-                        </div>
-                    </div>
-                    <div className='flex-1'>
+    <>
+        <div className='block lg:flex gap-[0.8rem]'>
+            <div className='flex-1 mb-[0.8rem] lg:mb-0'>
+                <GlobalBanner
+                    key="bannerImageOne"
+                    image={{ 
+                        ...img1,
+                        alt: ''
+                    }}
+                    href={{ 
+                        pathname: '/'
+                    }}
+                />
+            </div>
+            <div className='flex-1 flex gap-[0.8rem]'>
+                <div className='flex-1 '>
+                    <div className='pb-[0.4rem]'>
                         <GlobalBanner
-                            key="bannerImageFour"
+                            key="bannerImageTwo"
                             image={{ 
-                                ...img4,
+                                ...img2,
+                                alt: ''
+                            }}
+                            href={{ 
+                                pathname: '/'
+                            }}
+                        />
+                    </div>
+                    <div className='pt-[0.4rem]'>
+                        <GlobalBanner
+                            key="bannerImageThree"
+                            image={{ 
+                                ...img3,
                                 alt: ''
                             }}
                             href={{ 
@@ -62,9 +48,21 @@ function ThreePartBanner() {
                         />
                     </div>
                 </div>
+                <div className='flex-1'>
+                    <GlobalBanner
+                        key="bannerImageFour"
+                        image={{ 
+                            ...img4,
+                            alt: ''
+                        }}
+                        href={{ 
+                            pathname: '/'
+                        }}
+                    />
+                </div>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 

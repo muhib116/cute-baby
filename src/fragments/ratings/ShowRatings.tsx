@@ -1,6 +1,7 @@
 import React from 'react'
 import ratingImage from '@/assets/images/rating.png'
 import Img from '@/app/components/Img'
+import img1 from '@/assets/images/1.webp'
 
 function ShowRatings(props: {
     rating: number,
@@ -16,7 +17,10 @@ function ShowRatings(props: {
             className='bg-[var(--ratingDefaultColor)] absolute inset-0 block'
         ></span>
         <span
-            className='bg-[var(--ratingColor)] absolute left-0 top-0 h-full w-1/2 block'
+            className='bg-[var(--ratingColor)] absolute left-0 top-0 h-full block'
+            style={{
+                width: '20%'
+            }}
         ></span>
         <Img
             className='z-10 relative'

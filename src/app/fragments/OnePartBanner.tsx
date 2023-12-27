@@ -6,20 +6,16 @@ import img3 from '@/assets/images/3.webp'
 
 function OnePartBanner() {
   return (
-    <div className='px-4'>
-        <div className='container mx-auto'>
-            <GlobalBanner
-                key="bannerImageOne"
-                image={{ 
-                    ...img1,
-                    alt: ''
-                }}
-                href={{ 
-                    pathname: '/'
-                }}
-            />
-        </div>
-    </div>
+    <GlobalBanner
+        key="bannerImageOne"
+        image={{ 
+            ...img1,
+            alt: ''
+        }}
+        href={{ 
+            pathname: '/'
+        }}
+    />
   )
 }
 

@@ -11,31 +11,29 @@ function PopularCategories (props: {
 }) {
   const { data, title, renderItem, itemProps={}, href, itemsWrapperClassName='grid-cols-7' } = props
   return (
-    <div className='px-4'>
-      <div className='container mx-auto'>
-        <div className="flex items-center justify-between gap-1 my-3">
-          <h2 className="text-[24px] font-bold">
-            {title || 'Section Title'}
-          </h2>
+    <div>
+      <div className="flex items-center justify-between gap-1 my-3">
+        <h2 className="text-[24px] font-bold">
+          {title || 'Section Title'}
+        </h2>
 
-          <ViewAllBtn
-            href={ {...href} }
-          />
-        </div>
+        <ViewAllBtn
+          href={ {...href} }
+        />
+      </div>
 
-        <div 
-          className={['grid gap-[0.8rem]', itemsWrapperClassName].filter(Boolean).join(' ')}
-        >
-          {data.map((item, index) => (
-            renderItem ? (
-              <div key={index}>
-                {
-                  renderItem({key: String(index), data: item, ...itemProps })
-                }
-              </div>
-            ) : null
-          ))}
-        </div>
+      <div 
+        className={['grid gap-[0.8rem]', itemsWrapperClassName].filter(Boolean).join(' ')}
+      >
+        {data.map((item, index) => (
+          renderItem ? (
+            <div key={index}>
+              {
+                renderItem({key: String(index), data: item, ...itemProps })
+              }
+            </div>
+          ) : null
+        ))}
       </div>
     </div>
   );
