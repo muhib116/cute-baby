@@ -20,18 +20,19 @@ function LimitedTimeOffer() {
               pathname: '/'
           }}
         />
-      <div>
         <HorizontalCardList
           itemsWrapperClassName='grid-cols-1  sm:grid-cols-2'
           title="Limited Time Offer"
           key={ Math.random() }
+          href={{
+            pathname: '/'
+          }}
           data={ limitedTimeOffer }
           itemProps={{
             horizontal: true
           }}
           renderItem={ Product }
         />
-      </div>
     </div>
   )
 }

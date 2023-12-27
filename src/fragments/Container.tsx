@@ -6,7 +6,7 @@ function Container(props: {
     const { children } = props
   return (
     
-    <div className='px-4 py-10'>
+    <div className='px-4 my-10'>
         <div className='container mx-auto'>
             { children }
         </div>
