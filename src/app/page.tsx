@@ -14,27 +14,27 @@ export default function Home() {
   return (
     <main>
       <div className=''>
-        <Container>
+        {/* <Container>
           <HeaderBanner />
         </Container>
 
         <Container>
           <PopularCategories />
-        </Container>
+        </Container> */}
 
         <Container>
           <TodaysDeal />
         </Container>
 
-        <Container>
+        {/* <Container>
           <ThreePartBanner />
-        </Container>
+        </Container> */}
 
         <Container>
           <BestRated />
         </Container>
         
-        <Container>
+        {/* <Container>
           <OnePartBanner />
         </Container>
 
@@ -49,7 +49,7 @@ export default function Home() {
         </Container>
         <Container>
           <BestSelling />
-        </Container>
+        </Container> */}
       </div>
     </main>
   )

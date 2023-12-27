@@ -6,6 +6,7 @@ import { pricePrint } from '@/helper'
 import AddToCartButton from './fragments/AddToCartButton'
 import OfferTag from './fragments/OfferTag'
 import Price from '../price/Price'
+import PopupDetailsAndWish from '../PopupDetailsAndWish'
 
 function Product(props: {
     data: {
@@ -30,6 +31,8 @@ function Product(props: {
             className='absolute -top-8 left-0 origin-bottom-left rotate-90 z-10'
             text="20% off"
         />
+
+        <PopupDetailsAndWish />
 
         <div 
             className={[
