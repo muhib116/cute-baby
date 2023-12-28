@@ -11,7 +11,7 @@ function HorizontalCardList (props: {
     horizontal?: boolean;
   };
   renderItem?: Function;
-  placeholderItem: number;
+  placeholderItem?: number;
 }) {
   const { data, title, renderItem, itemProps={}, href, itemsWrapperClassName='grid-cols-7', placeholderItem } = props
   return (

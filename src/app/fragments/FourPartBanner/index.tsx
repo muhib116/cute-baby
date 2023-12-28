@@ -8,7 +8,7 @@ import Loader from './Loader'
 
 function ThreePartBanner() {
   return (
-    true ? <Loader />
+    false ? <Loader />
     : 
     <div className='block lg:flex gap-[0.8rem]'>
         <div className='flex-1 mb-[0.8rem] lg:mb-0'>

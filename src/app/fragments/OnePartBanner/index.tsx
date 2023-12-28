@@ -5,7 +5,7 @@ import Loader from './Loader'
 
 function OnePartBanner() {
   return (
-    true ?
+    false ?
     <Loader />
     :
     <GlobalBanner

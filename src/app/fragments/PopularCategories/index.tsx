@@ -12,7 +12,7 @@ const getData = async () => {
 async function PopularCategories() {
   const data = await getData()
   return (
-    true ?
+    false ?
     <Loader />
     :
     <HorizontalCardList
