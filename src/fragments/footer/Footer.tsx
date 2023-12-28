@@ -4,6 +4,7 @@ import { EnvelopeSimple, FacebookLogo, GoogleChromeLogo, InstagramLogo, MapPin, 
   import React from 'react'
 const footerMenu = [
   {
+    id: 1,
     title: 'Information',
     item1: 'About Us',
     item2: 'Delivery Information',
@@ -12,6 +13,7 @@ const footerMenu = [
     item5: 'Site Map'
   },
   {
+    id: 2,
     title: 'Extras',
     item1: 'Brands',
     item2: 'Gift Certificates',
@@ -20,6 +22,7 @@ const footerMenu = [
     item5: 'Contact Us'
   },
   {
+    id: 3,
     title: 'My Account',
     item1: 'My Account',
     item2: 'Order History',
@@ -28,6 +31,7 @@ const footerMenu = [
     item5: 'Returns'
   },
   {
+    id: 4,
     title: 'Quick Links',
     item1: 'Seller Login',
     item2: 'Seller Sign Up',
@@ -42,10 +46,10 @@ function Footer() {
   return (
     <div>
       <div className='bg-[#181818]'>
-        <div className='py-[60px] grid grid-cols-5 container mx-auto'>
+        <div className='py-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 container mx-auto'>
           {
             footerMenu.map(item => (
-              <div className='px-4'>
+              <div key={item.id} className='px-4'>
                 <h5 className='text-white mb-5 font-medium'>{ item.title }</h5>
                 <div className='font-light text-[0.8rem] text-[#a7a7a7]'>
                   <a href="#" className='block mb-2'>{ item.item1 }</a>

@@ -5,12 +5,12 @@ export default function AddButton(props: {
 }) {
   return (
     <button 
-        onClick={ () => {
-            console.log('Add to cart')
-        } }
-        className='w-full px-4 py-2 font-semibold border-solid border border-[var(--borderColor)] rounded text-[var(--cartColor)] text-center relative hover:text-white hover:bg-[var(--cartColor)] hover:shadow duration-300 ease-in-out'
+      onClick={ () => {
+          console.log('Add to cart')
+      } }
+      className='w-full px-4 py-2 font-semibold rounded text-white text-center relative hover:bg-white hover:text-[var(--cartColor)] hover:shadow duration-300 ease-in-out bg-[var(--cartColor)]'
     >
-        Add to bag
+      Add to bag
     </button>
   )
 }

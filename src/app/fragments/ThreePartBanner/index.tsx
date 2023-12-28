@@ -3,11 +3,15 @@ import GlobalBanner from '@/fragments/banner/Banner'
 import img1 from '@/assets/images/1.webp'
 import img2 from '@/assets/images/2.webp'
 import img3 from '@/assets/images/3.webp'
+import Loader from './Loader'
 
 function ThreePartBanner() {
   return (
+    true ?
+    <Loader />
+    :
     <div className='flex gap-[0.8rem]'>
-        <div className=''>
+        <div style={{ aspectRatio: '1:1' }}>
             <div className='pb-[0.4rem]'>
                 <GlobalBanner
                     key="bannerImageTwo"
@@ -33,7 +37,7 @@ function ThreePartBanner() {
                 />
             </div>
         </div>
-        <div className='w-[66%] mb-[0.8rem] lg:mb-0'>
+        <div className='mb-[0.8rem] lg:mb-0'>
             <GlobalBanner
                 key="bannerImageOne"
                 image={{ 

@@ -4,12 +4,13 @@ import React from 'react'
 
 function Img(props: {
   src: string,
+  blur_src?: string,
   width: number,
   height: number,
   alt: string,
   className?: string,
 }) {
-  const { src, width, height, alt, className } = props
+  const { src, width, height, alt, className, blur_src = src } = props
   return (
     <Image
       className={ [className, 'object-cover object-center'].filter(Boolean).join(' ') }
@@ -18,7 +19,7 @@ function Img(props: {
       height={ height }
       placeholder='blur'
       alt={ alt }
-      blurDataURL={ src }
+      blurDataURL={ blur_src }
     />
   )
 }

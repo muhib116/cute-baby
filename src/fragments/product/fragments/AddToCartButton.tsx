@@ -4,18 +4,23 @@ import AddMoreToCart from '../../../app/components/AddMoreToCart'
 import AddButton from './AddButton'
 
 function AddToCartButton(props: {
-    data: object
+    data: object,
+    className?: string
 }) {
-    const { data } = props
+    const { data, className } = props
   return (
-    true ?
-    <AddMoreToCart
-        data={data}
-    />
-    :
-    <AddButton
-        data={data}
-    />
+    <div className={ className }>
+      {
+        true ?
+        <AddMoreToCart
+          data={data}
+        />
+        :
+        <AddButton
+          data={data}
+        />
+      }
+    </div>
   )
 }
 

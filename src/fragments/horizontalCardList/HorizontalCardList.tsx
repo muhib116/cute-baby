@@ -1,5 +1,6 @@
 import React from 'react';
 import ViewAllBtn from './fragments/ViewAllBtn';
+import Loader from './Loader';
 
 function PopularCategories (props: {
   itemsWrapperClassName?: string;
@@ -11,6 +12,11 @@ function PopularCategories (props: {
 }) {
   const { data, title, renderItem, itemProps={}, href, itemsWrapperClassName='grid-cols-7' } = props
   return (
+    true ?
+    <Loader
+      itemsWrapperClassName={ itemsWrapperClassName }
+    />
+    :
     <div>
       <div className="flex items-center justify-between gap-1 my-3">
         <h2 className="text-[24px] font-bold">
