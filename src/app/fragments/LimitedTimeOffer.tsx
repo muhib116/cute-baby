@@ -11,15 +11,16 @@ function LimitedTimeOffer() {
         <Banner
           key="bannerImageOne"
           image={{ 
-              src: 'https://images.unsplash.com/photo-1703533140744-bb66f9390245?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D',
-              width: 200,
-              height: 200,
-              alt: ''
+            src: 'https://images.unsplash.com/photo-1703533140744-bb66f9390245?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D',
+            width: 200,
+            height: 200,
+            alt: ''
           }}
           href={{ 
-              pathname: '/'
+            pathname: '/'
           }}
         />
+        
         <HorizontalCardList
           itemsWrapperClassName='grid-cols-1  sm:grid-cols-2'
           title="Limited Time Offer"
@@ -30,9 +31,9 @@ function LimitedTimeOffer() {
           data={ limitedTimeOffer }
           itemProps={{
             horizontal: true,
-            placeholderItem: 4
           }}
           renderItem={ Product }
+          placeholderItem={ 4 }
         />
     </div>
   )

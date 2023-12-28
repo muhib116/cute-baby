@@ -16,10 +16,10 @@ function BestSelling() {
         }}
         data={ limitedTimeOffer }
         itemProps={{
-          horizontal: true,
-          placeholderItem: 4
+          horizontal: true
         }}
-        renderItem={ Product }
+          placeholderItem={ 4 }
+          renderItem={ Product }
     />
   )
 }

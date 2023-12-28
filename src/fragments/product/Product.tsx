@@ -71,7 +71,7 @@ function Product(props: {
             </h3>
             <div 
                 className={[
-                    'p-3',
+                    'py-3',
                     horizontal ? 'text-left' : 'text-center'
                 ].filter(Boolean).join(' ')}
             >

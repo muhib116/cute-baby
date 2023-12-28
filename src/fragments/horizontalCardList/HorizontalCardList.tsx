@@ -2,19 +2,24 @@ import React from 'react';
 import ViewAllBtn from './fragments/ViewAllBtn';
 import Loader from './Loader';
 
-function PopularCategories (props: {
+function HorizontalCardList (props: {
   itemsWrapperClassName?: string;
   data: any[]; // Adjust the type of your data array
   title?: string;
   href?: object;
-  itemProps?: object;
+  itemProps?: {
+    horizontal?: boolean;
+  };
   renderItem?: Function;
+  placeholderItem: number;
 }) {
-  const { data, title, renderItem, itemProps={}, href, itemsWrapperClassName='grid-cols-7' } = props
+  const { data, title, renderItem, itemProps={}, href, itemsWrapperClassName='grid-cols-7', placeholderItem } = props
   return (
-    true ?
+    false ?
     <Loader
       itemsWrapperClassName={ itemsWrapperClassName }
+      placeholderItem={ placeholderItem }
+      itemProps={{ horizontal: itemProps.horizontal }}
     />
     :
     <div>
@@ -32,7 +37,7 @@ function PopularCategories (props: {
       </div>
 
       <div 
-        className={['grid gap-[0.8rem]', itemsWrapperClassName].filter(Boolean).join(' ')}
+        className={['grid gap-[0.8rem] w-full', itemsWrapperClassName].filter(Boolean).join(' ')}
       >
         {data.map((item, index) => (
           renderItem ? (
@@ -48,4 +53,4 @@ function PopularCategories (props: {
   );
 };
 
-export default PopularCategories;
+export default HorizontalCardList;

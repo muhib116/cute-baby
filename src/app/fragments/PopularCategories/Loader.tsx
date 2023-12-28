@@ -11,7 +11,9 @@ const Loader = () => {
                         key={ index }
                         className='p-4 border rounded'
                     >
-                        <div className='bg-slate-200 aspect-square'></div>
+                        <div className='bg-slate-200 aspect-square flex items-center justify-center'>
+                            <ImageSquare size={ 20 } color='#666' />
+                        </div>
                         <div className='bg-slate-400 p-1 mt-2'></div>
                         <div className='bg-slate-300 p-1 mt-2 w-1/2'></div>
                     </div>

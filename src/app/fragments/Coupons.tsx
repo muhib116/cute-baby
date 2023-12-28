@@ -11,6 +11,7 @@ function Coupons() {
         key={ Math.random() }
         data={ couponsData }
         renderItem={ CouponCard }
+        placeholderItem={ 8 }
     />
   )
 }

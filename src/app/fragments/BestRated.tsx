@@ -12,10 +12,10 @@ function BestRated() {
         key={ Math.random() }
         data={ bestRated }
         itemProps={{
-          horizontal: true,
-          placeholderItem: 6
+          horizontal: true
         }}
         renderItem={ Product }
+        placeholderItem={ 6 }
     />
   )
 }

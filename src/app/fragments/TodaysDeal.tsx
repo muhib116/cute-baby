@@ -13,8 +13,8 @@ function TodaysDeal() {
         data={ todaysDeal }
         itemProps={{
           horizontal: false,
-          placeholderItem: 5
         }}
+        placeholderItem={ 5 }
         renderItem={ Product }
     />
   )
