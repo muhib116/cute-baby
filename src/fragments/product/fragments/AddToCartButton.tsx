@@ -11,7 +11,7 @@ function AddToCartButton(props: {
   return (
     <div className={ className }>
       {
-        false ?
+        true ?
         <AddMoreToCart
           data={data}
         />

@@ -16,15 +16,15 @@ export default function Home() {
       <div className=''>
         {/* <Container>
           <HeaderBanner />
-        </Container>
-
-        <Container>
-          <PopularCategories />
         </Container> */}
 
         <Container>
-          <TodaysDeal />
+          <PopularCategories />
         </Container>
+
+        {/* <Container>
+          <TodaysDeal />
+        </Container> */}
 
         {/* <Container>
           <ThreePartBanner />
