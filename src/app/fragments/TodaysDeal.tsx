@@ -12,7 +12,8 @@ function TodaysDeal() {
         key={ Math.random() }
         data={ todaysDeal }
         itemProps={{
-          horizontal: false
+          horizontal: false,
+          placeholderItem: 5
         }}
         renderItem={ Product }
     />

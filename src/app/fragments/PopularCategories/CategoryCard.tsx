@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Card from '@/fragments/horizontalCardList/fragments/Card'
-import Img from '../components/Img'
+import Img from '../../components/Img'
 import Link from 'next/link'
 
 function CategoryCard(props: {

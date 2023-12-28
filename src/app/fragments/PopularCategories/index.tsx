@@ -3,6 +3,7 @@ import HorizontalCardList from '@/fragments/horizontalCardList/HorizontalCardLis
 import { popularCategoriesData } from '@/placeholderData/data'
 import CategoryCard from './CategoryCard'
 import axios from '@/axiosConfig'
+import Loader from './Loader'
 
 const getData = async () => {
   const { data } = await axios(process.env.API_URL+'categories/list')
@@ -11,6 +12,9 @@ const getData = async () => {
 async function PopularCategories() {
   const data = await getData()
   return (
+    true ?
+    <Loader />
+    :
     <HorizontalCardList
       itemsWrapperClassName='grid-cols-2 sm:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8'
       title="Popular Categories"
