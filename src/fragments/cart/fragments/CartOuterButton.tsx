@@ -3,17 +3,21 @@ import OpenButton from './OpenButton'
 import CloseButton from './CloseButton'
 
 const cartOuterButton = (props: {
-    className: string
+    className: string,
+    isOpen: boolean,
+    setToggleCart: Function
 }) => {
-    const { className } = props
+    const { className, isOpen, setToggleCart } = props
   return (
-    true ?
+    isOpen ?
     <CloseButton
-        className={className}
+      className={className}
+      setToggleCart={ setToggleCart }
     />
     :
     <OpenButton
-        className={className}
+      className={className}
+      setToggleCart={ setToggleCart }
     />
   )
 }
