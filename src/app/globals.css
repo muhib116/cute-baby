@@ -61,12 +61,6 @@ a:is(:hover, .active){
   color: var(--primaryColor);
   transform: translateY(-2px);
 }
-button{
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
-  font-family: inherit;
-}
 button:active{
   transform-origin: center;
   transform: scale(0.95);
