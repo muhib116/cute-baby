@@ -8,5 +8,4 @@ const instance = axios.create({
         // You can add other common headers here
     },
 })
-console.log(instance)
 export default instance
