@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import CartOuterButton from './fragments/CartOuterButton'
 import EmptyCart from './EmptyCart'
 import { twMerge } from 'tailwind-merge'
+import CartList from './CartList'
 
 
 const Cart = () => {
@@ -16,14 +17,14 @@ const Cart = () => {
         ].filter(Boolean).join(' '))
       }
     >
-      { toggleCart ? 'open' : 'closed' }
       <CartOuterButton
         isOpen={ toggleCart }
         setToggleCart={ setToggleCart }
         className='absolute right-full bottom-1/2 bg-white'
       />
       
-      <EmptyCart />
+      {/* <EmptyCart /> */}
+      <CartList />
     </div>
   )
 }

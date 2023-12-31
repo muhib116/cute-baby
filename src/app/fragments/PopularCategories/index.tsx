@@ -2,12 +2,12 @@ import React from 'react'
 import HorizontalCardList from '@/fragments/horizontalCardList/HorizontalCardList'
 import { popularCategoriesData } from '@/placeholderData/data'
 import CategoryCard from './CategoryCard'
-import axios from '@/axiosConfig'
+import { fetchData } from '@/apiConfig'
 import Loader from './Loader'
 
 const getData = async () => {
-  const { data } = await axios(process.env.API_URL+'categories/list')
-  return data.data
+  const { data } = await fetchData('categories/list')
+  return data
 }
 async function PopularCategories() {
   const data = await getData()

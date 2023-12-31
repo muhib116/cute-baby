@@ -208,3 +208,38 @@ export const couponsData = [
         src: 'https://shop.activeitzone.com/public/uploads/all/jJZ7ccmqKHqpulmobvlwyjEHLkpQongEtfXpzse5.webp'
     },
 ]
+
+export const cartData = [
+    {
+        path: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+        blur_path: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=8&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+        title: 'C D-X',
+        price: 1350,
+        quantity: 0,
+        stock: 65
+    },
+    {
+        path: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+        blur_path: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=8&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D',
+        title: 'Domino',
+        price: 2410,
+        quantity: 0,
+        stock: 10
+    },
+    {
+        path: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+        blur_path: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=8&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+        title: 'Headphones',
+        price: 4535,
+        quantity: 0,
+        stock: 9
+    },
+    {
+        path: 'https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+        blur_path: 'https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=8&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+        title: 'Dove special cream for facial gestures',
+        price: 535,
+        quantity: 0,
+        stock: 3
+    },
+]
