@@ -3,6 +3,7 @@ import Img from '@/app/components/Img'
 import { pricePrint } from '@/helper'
 import React, { useState } from 'react'
 import QuantityInput from './QuantityInput'
+import { twMerge } from 'tailwind-merge'
 
 const CartItem = (props: {
     data: {
@@ -12,9 +13,10 @@ const CartItem = (props: {
         price: number;
         quantity: number;
         stock: number;
-    }
+    };
+    className?: string;
 }) => {
-    const { data } = props
+    const { data, className } = props
     const [quantity, setQuantity] = useState<number>(data.quantity)
     const handleQuantity = (direction: number) => {
         setQuantity((state) => {
@@ -29,7 +31,10 @@ const CartItem = (props: {
     }
   return (
     <div
-        className='shadow-[0px_1px_6px_#0002] p-4 rounded-lg flex items-center justify-between gap-4'
+        className={twMerge([
+            'shadow bg-white border border-[var(--borderColor)] flex items-center justify-between gap-4',
+            className
+        ].filter(Boolean).join(' '))}
     >
         <div className='flex gap-4 items-center'>
             <Img
@@ -38,7 +43,7 @@ const CartItem = (props: {
                 width={60}
                 height={60}
                 alt={data.title}
-                className='w-[60px] h-[60px] aspect-square object-center'
+                className='w-[70px] h-[88px] aspect-square object-center'
             />
             <div>
                 <p 
@@ -54,10 +59,12 @@ const CartItem = (props: {
                 </p>
             </div>
         </div>
-        <QuantityInput
-            quantity={ quantity}
-            setQuantity={ handleQuantity }
-        />
+        <div className='py-1.5'>
+            <QuantityInput
+                quantity={ quantity}
+                setQuantity={ handleQuantity }
+            />
+        </div>
     </div>
   )
 }

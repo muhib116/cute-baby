@@ -1,4 +1,3 @@
-// 'use client'
 import Image from 'next/image'
 import React from 'react'
 
@@ -9,8 +8,10 @@ function Img(props: {
   height: number,
   alt: string,
   className?: string,
-}) {
+}) 
+{
   const { src, width, height, alt, className, blur_src = src } = props
+
   return (
     <Image
       className={ [className, 'object-cover object-center'].filter(Boolean).join(' ') }

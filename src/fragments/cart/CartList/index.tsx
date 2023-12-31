@@ -1,27 +1,30 @@
 import React from 'react'
 import CartItem from './fragments/CartItem'
 import { cartData } from '@/placeholderData/data'
+import CartFooter from './fragments/CartFooter/Index'
+import CartHeader from './fragments/CartHeader'
 
 const CartList = () => {
   return (
-    <div className='p-6'>
-        <div className='flex justify-between'>
-            <p className='font-bold'>My Cart</p>
-            <button
-                className='text-[var(--primaryColor)]'
-            >Add more</button>
+    <div className='p-6 pb-0 h-full flex flex-col'>
+        <div className='flex-1'>
+            <CartHeader />
+
+            <div className='grid gap-4 mt-4 h-[75%] overflow-y-auto'>
+                {
+                    cartData.map((item, index) => (
+                        <CartItem
+                            key={index}
+                            data={item}
+                        />
+                    ))
+                }
+            </div>
         </div>
 
-        <div className='grid gap-6 mt-4'>
-            {
-                cartData.map((item, index) => (
-                    <CartItem
-                        key={index}
-                        data={item}
-                    />
-                ))
-            }
-        </div>
+        <CartFooter
+            className='flex-1'
+        />
     </div>
   )
 }

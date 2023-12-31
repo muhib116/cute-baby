@@ -242,4 +242,12 @@ export const cartData = [
         quantity: 0,
         stock: 3
     },
+    {
+        path: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+        blur_path: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=8&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+        title: 'Hand watch',
+        price: 4535,
+        quantity: 0,
+        stock: 11
+    },
 ]
