@@ -32,7 +32,7 @@ const CartItem = (props: {
   return (
     <div
         className={twMerge([
-            'shadow bg-white border border-[var(--borderColor)] flex items-center justify-between gap-4',
+            'bg-white border border-[var(--borderColor)] flex items-center justify-between gap-4',
             className
         ].filter(Boolean).join(' '))}
     >
@@ -43,17 +43,17 @@ const CartItem = (props: {
                 width={60}
                 height={60}
                 alt={data.title}
-                className='w-[70px] h-[88px] aspect-square object-center'
+                className='w-[70px] h-[80px] aspect-square object-center'
             />
             <div>
                 <p 
-                    className='font-bold truncate w-[150px]'
+                    className='text-sm w-[200px] line-clamp-2'
                     title={ data.title }
                 >
                     { data.title }
                 </p>
                 <p
-                    className='truncate'
+                    className='truncate font-medium'
                 >
                     { pricePrint(data.price * quantity) }
                 </p>

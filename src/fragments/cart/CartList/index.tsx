@@ -7,10 +7,10 @@ import CartHeader from './fragments/CartHeader'
 const CartList = () => {
   return (
     <div className='p-6 pb-0 h-full flex flex-col'>
-        <div className='flex-1'>
+        <div className='flex-1 h-[50%]'>
             <CartHeader />
 
-            <div className='grid gap-4 mt-4 h-[75%] overflow-y-auto'>
+            <div className='grid gap-4 mt-4 h-[84%] overflow-y-auto'>
                 {
                     cartData.map((item, index) => (
                         <CartItem

@@ -9,14 +9,10 @@ function OnePartBanner() {
     <Loader />
     :
     <GlobalBanner
-        key="bannerImageOne"
-        image={{ 
-            ...img1,
-            alt: ''
-        }}
-        href={{ 
-            pathname: '/'
-        }}
+      key="bannerImageOne"
+      bannerKey='fullBanner.fullBanner'
+      width={ 1200 }
+      height={ 400 }
     />
   )
 }

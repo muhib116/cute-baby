@@ -29,7 +29,7 @@ const OpenButton = (props: {
         />
         0 Items
         <span 
-            className='block bg-[var(--cartColor)]  text-white text-lg mt-1 truncate'
+            className='block bg-[var(--cartColor)] px-1 text-white text-lg mt-1 truncate'
             title={ pricePrint(99999999) }
         >
             { pricePrint(99999999) }

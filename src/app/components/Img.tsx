@@ -18,9 +18,9 @@ function Img(props: {
       src={ src }
       width={ width }
       height={ height }
-      // placeholder='blur'
+      placeholder='blur'
       alt={ alt }
-      // blurDataURL={ blur_src }
+      blurDataURL={ blur_src }
     />
   )
 }

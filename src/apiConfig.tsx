@@ -5,6 +5,9 @@ export const fetchData = async (url: string, config?: object) => {
         headers: {
             authorization: '',
             ...config
+        },
+        next: {
+            revalidate: 10
         }
     })
     const data = await res.json()

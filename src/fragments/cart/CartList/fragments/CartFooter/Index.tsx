@@ -20,7 +20,7 @@ const CartFooter = (props: {
     >
       <CalculationSummary />
 
-      <div className='mt-6 bg-white h-full -ml-6 -mr-6 px-6 pt-4 rounded-t-[30px]'>
+      <div className='mt-4 bg-white h-full -ml-6 -mr-6 px-6 pt-2 rounded-t-[30px]'>
         <PaymentMethod />
         <button className='flex justify-center items-center gap-4 w-full shadow rounded mt-5 font-bold text-2xl bg-[var(--primaryColor)] text-white border border-[var(--cartColor)] py-2 px-4'>
           <Img
